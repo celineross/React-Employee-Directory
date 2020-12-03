@@ -1,0 +1,181 @@
+[
+    {
+        "id": 1,
+        "image": "../public/images/scott.jpg",
+        "name": {
+            "first": "Michael",
+            "last": "Scott"
+        },
+        "department": "Management",
+        "role": "Regional Manager",
+        "email": "michael.scott@dundermifflin.com",
+        "extension": "245"
+    },
+    {
+        "id": 2,
+        "image": "../public/images/halpert.jpg",
+        "name": {
+            "first": "Jim",
+            "last": "Halpert"
+        },
+        "department": "Sales",
+        "role": "Salesman",
+        "email": "jim.halpert@dundermifflin.com",
+        "extension": "874"
+    },
+    {
+        "id": 3,
+        "image": "../public/images/schrute.jpg",
+        "name": {
+            "first": "Dwight",
+            "last": "Schrute"
+        },
+        "department": "Sales",
+        "role": "Salesman",
+        "email": "dwight.schrute@dundermifflin.com",
+        "extension": "368"
+    },
+    {
+        "id": 4,
+        "image": "../public/images/beesly.jpg",
+        "name": {
+            "first": "Pam",
+            "last": "Beesly"
+        },
+        "department": "Management",
+        "role": "Office Manager",
+        "email": "pam.beesly@dundermifflin.com"
+    },
+    {
+        "id": 5,
+        "image": "../public/images/martin.jpg",
+        "name": {
+            "first": "Angela",
+            "last": "Martin"
+        },
+        "department": "Finance",
+        "role": "Head Accountant",
+        "email": "angela.martin@dundermifflin.com",
+        "extension": "378"
+    },
+    {
+        "id": 6,
+        "image": "../public/images/martinez.png",
+        "name": {
+            "first": "Oscar",
+            "last": "Martinez"
+        },
+        "department": "Finance",
+        "role": "Accountant",
+        "email": "oscar.martinez@dundermifflin.com",
+        "extension": "957"
+    },
+    {
+        "id": 7,
+        "image": "../public/images/malone.jpg",
+        "name": {
+            "first": "Kevin",
+            "last": "Malone"
+        },
+        "department": "Finance",
+        "role": "Accountant",
+        "email": "kevin.malone@dundermifflin.com",
+        "extension": "264"
+    },
+    {
+        "id": 8,
+        "image": "../public/images/flenderson.jpg",
+        "name": {
+            "first": "Toby",
+            "last": "Flenderson"
+        },
+        "department": "Human Resources",
+        "role": "HR Representative",
+        "email": "toby.flendersen@dundermifflin.com",
+        "extension": "946"
+    },
+    {
+        "id": 9,
+        "image": "../public/images/lapin.png",
+        "name": {
+            "first": "Phyllis",
+            "last": "Lapin"
+        },
+        "department": "Sales",
+        "role": "Salesman",
+        "email": "phyllis.lapin@dundermifflin.com",
+        "extension": "218"
+    },
+    {
+        "id": 10,
+        "image": "../public/images/kapoor.png",
+        "name": {
+            "first": "Kelly",
+            "last": "Kapoor"
+        },
+        "department": "Customer Service",
+        "role": "Customer Support Representative",
+        "email": "kelly.kapoor@dundermifflin.com",
+        "extension": "398"
+    },
+    {
+        "id": 11,
+        "image": "../public/images/hudson.jpg",
+        "name": {
+            "first": "Stanley",
+            "last": "Hudson"
+        },
+        "department": "Sales",
+        "role": "Salesman",
+        "email": "stanley.hudson@dundermifflin.com",
+        "extension": "689"
+    },
+    {
+        "id": 12,
+        "image": "../public/images/palmer.jpg",
+        "name": {
+            "first": "Meredith",
+            "last": "Palmer"
+        },
+        "department":"Customer Service",
+        "role": "Customer Support Representative",
+        "email": "meredith.palmer@dundermifflin.com",
+        "extension": "229"
+    },
+    {
+        "id": 13,
+        "image": "../public/images/bratton.jpg",
+        "name": {
+            "first": "Creed Bratton",
+            "last": "Scott"
+        },
+        "department":"Customer Service",
+        "role": "Quality Assurance",
+        "email": "creed.bratton@dundermifflin.com",
+        "extension": "908"
+    },
+    {
+        "id": 14,
+        "image": "../public/images/wallace.jpeg",
+        "name": {
+            "first": "David",
+            "last": "Wallace"
+        },
+        "department":"Corporate",
+        "role": "CFO",
+        "email": "david.wallace@dundermifflin.com",
+        "extension": "549"
+    },
+    {
+        "id": 15,
+        "image": "../public/images/levinson.jpg",
+        "name": {
+            "first": "Jan",
+            "last": "Levinson"
+        },
+        "department":"Corporate",
+        "role": "VP of Northeast Sales",
+        "email": "jan.levinson@dundermifflin.com",
+        "extension": "933"
+    }
+]
