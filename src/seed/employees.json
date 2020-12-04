@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "image": "../public/images/scott.jpg",
+        "image": "https://upload.wikimedia.org/wikipedia/en/d/dc/MichaelScott.png",
         "name": {
             "first": "Michael",
             "last": "Scott"
@@ -13,7 +13,7 @@
     },
     {
         "id": 2,
-        "image": "../public/images/halpert.jpg",
+        "image": "https://upload.wikimedia.org/wikipedia/en/7/7e/Jim-halpert.jpg",
         "name": {
             "first": "Jim",
             "last": "Halpert"
@@ -25,7 +25,7 @@
     },
     {
         "id": 3,
-        "image": "../public/images/schrute.jpg",
+        "image": "https://vignette.wikia.nocookie.net/characters/images/c/cd/Dwight_Schrute.jpg/revision/latest?cb=20151122222930",
         "name": {
             "first": "Dwight",
             "last": "Schrute"
@@ -37,18 +37,19 @@
     },
     {
         "id": 4,
-        "image": "../public/images/beesly.jpg",
+        "image": "https://upload.wikimedia.org/wikipedia/en/6/67/Pam_Beesley.jpg",
         "name": {
             "first": "Pam",
             "last": "Beesly"
         },
         "department": "Management",
         "role": "Office Manager",
-        "email": "pam.beesly@dundermifflin.com"
+        "email": "pam.beesly@dundermifflin.com",
+        "extension": "000"
     },
     {
         "id": 5,
-        "image": "../public/images/martin.jpg",
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Angela_Martin.jpg/230px-Angela_Martin.jpg",
         "name": {
             "first": "Angela",
             "last": "Martin"
@@ -60,7 +61,7 @@
     },
     {
         "id": 6,
-        "image": "../public/images/martinez.png",
+        "image": "https://upload.wikimedia.org/wikipedia/en/5/54/Oscar_Martinez_of_The_Office.jpg",
         "name": {
             "first": "Oscar",
             "last": "Martinez"
@@ -72,7 +73,7 @@
     },
     {
         "id": 7,
-        "image": "../public/images/malone.jpg",
+        "image": "https://vignette2.wikia.nocookie.net/characters/images/1/1c/Kevin_Malone.jpg/revision/latest?cb=20151130191702",
         "name": {
             "first": "Kevin",
             "last": "Malone"
@@ -84,7 +85,7 @@
     },
     {
         "id": 8,
-        "image": "../public/images/flenderson.jpg",
+        "image": "https://cdn.quotesgram.com/img/12/41/1986772483-500px-2009TobyCropped.jpg",
         "name": {
             "first": "Toby",
             "last": "Flenderson"
@@ -96,7 +97,7 @@
     },
     {
         "id": 9,
-        "image": "../public/images/lapin.png",
+        "image": "https://vignette.wikia.nocookie.net/theoffice/images/e/e6/Phyllis_Vance.jpg/revision/latest/scale-to-width-down/2000?cb=20170701090016",
         "name": {
             "first": "Phyllis",
             "last": "Lapin"
@@ -108,7 +109,7 @@
     },
     {
         "id": 10,
-        "image": "../public/images/kapoor.png",
+        "image": "https://vignette.wikia.nocookie.net/theoffice/images/6/69/Kelly_Kapoor.jpg/revision/latest/scale-to-width-down/2000?cb=20170701090501",
         "name": {
             "first": "Kelly",
             "last": "Kapoor"
@@ -120,7 +121,7 @@
     },
     {
         "id": 11,
-        "image": "../public/images/hudson.jpg",
+        "image": "https://vignette.wikia.nocookie.net/theoffice/images/2/23/Stanley_Hudson.jpg/revision/latest/scale-to-width-down/2000?cb=20170701085445",
         "name": {
             "first": "Stanley",
             "last": "Hudson"
@@ -132,7 +133,7 @@
     },
     {
         "id": 12,
-        "image": "../public/images/palmer.jpg",
+        "image": "https://vignette2.wikia.nocookie.net/theoffice/images/9/90/2009Meredith.jpg/revision/latest/scale-to-width-down/2000?cb=20170701084945",
         "name": {
             "first": "Meredith",
             "last": "Palmer"
@@ -144,7 +145,7 @@
     },
     {
         "id": 13,
-        "image": "../public/images/bratton.jpg",
+        "image": "http://www.gannett-cdn.com/-mm-/7efb7aa3135461b37629a4b2ec0d0d0502654a46/c=0-1-2249-3000&r=537&c=0-0-534-712/local/-/media/2015/12/29/Springfield/Springfield/635869837780254828-CreedBrattonsubmitted.jpg",
         "name": {
             "first": "Creed Bratton",
             "last": "Scott"
@@ -156,7 +157,7 @@
     },
     {
         "id": 14,
-        "image": "../public/images/wallace.jpeg",
+        "image": "https://alchetron.com/cdn/david-wallace-the-office-91dec1eb-8b00-4cf9-b14e-4e9bf1c8830-resize-750.jpeg",
         "name": {
             "first": "David",
             "last": "Wallace"
@@ -168,7 +169,7 @@
     },
     {
         "id": 15,
-        "image": "../public/images/levinson.jpg",
+        "image": "https://i.pinimg.com/736x/57/71/50/577150e4a592a9ba7d9696e9da7dc23f--the-whale-whales.jpg",
         "name": {
             "first": "Jan",
             "last": "Levinson"
