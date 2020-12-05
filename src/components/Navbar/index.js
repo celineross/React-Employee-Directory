@@ -1,33 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.css";
-import employees from "../../seed/employees.json";
 
-function Navbar() {
-    const [search, setSearch] = useState("");
-    const [filter, setFilter] = useState(false);
-    const [employees, setEmployees] = useState(employees);
-
-    function handleSearch(e) {
-        e.preventDefault();
-        setSearch(e.target.value);
-    }
-
-    function handleFilterName() {
-        if (!filter) {
-
-        }
-    }
-
-    // function handleFilterDepartment() {
-
-    // }
-
-    // function handleFilterRole() {
-
-    // }
+function Navbar(props) {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-custom navbar-expand-lg">
             <ul className="navbar-nav">
+                <li className="nav-item">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Dunder_Mifflin%2C_Inc.svg/1200px-Dunder_Mifflin%2C_Inc.svg.png"
+                        alt="Dunder Mifflin"
+                        height="75"
+                    ></img></li>
                 <li className="nav-item">
                     <form className="form-inline my-2 my-lg-0">
                         <input
@@ -35,12 +18,19 @@ function Navbar() {
                             placeholder="Enter Name, Dept, or Role"
                             aria-label="Search"
                             type="text"
-                            value={search}
-                            onChange={handleSearch}
                             required></input>
-                        <button onClick={handleFilterName}>Search by Name</button>
-                        {/* <button onClick={handleFilterDepartment}>Search by Department</button> */}
-                        {/* <button onClick={handleFilterRole}>Search by Role</button> */}
+                        <button
+                            type="button"
+                            className="btn btn-dark"
+                            onClick={props.handleFilterName}>Search by Name</button>
+                        <button
+                            type="button"
+                            className="btn btn-dark"
+                            onClick={props.handleFilterDepartment}>Search by Department</button>
+                        <button
+                            type="button"
+                            className="btn btn-dark"
+                            onClick={props.handleFilterRole}>Search by Role</button>
                     </form>
                 </li>
             </ul>

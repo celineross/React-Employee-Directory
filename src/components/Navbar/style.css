@@ -1,0 +1,13 @@
+.nav-item {
+    margin: 5px;
+}
+
+.navbar-custom {
+    background-color: black;
+}
+
+.btn-dark,
+.mr-sm-2 {
+    margin-top: 15px;
+    margin-right: 8px;
+}
