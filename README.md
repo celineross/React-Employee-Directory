@@ -10,7 +10,7 @@
 ## Description
 <p>This app allows a user to keep track of their entire employee directory and features search options by name, department, and role (WIP).</p>
 
-<img src="https://i.gyazo.com/25b586701cdac8a186004a30de1f9d39.jpg" alt="Homepage" style="width:25%; height:25%">
+<img src="https://i.gyazo.com/25b586701cdac8a186004a30de1f9d39.jpg" alt="Homepage" style="width:100%; height:100%">
 
 <br>
 <br>
