@@ -1,66 +1,74 @@
-import React, { useState } from "react";
+import React from "react";
 import Wrapper from "./components/Wrapper";
 import Navbar from "./components/Navbar"
 import employees from "./seed/employees.json";
 import EmployeeCard from "./components/Card";
 
+
 function App() {
-  const [search, setSearch] = useState("");
-  const [filtered, setFiltered] = useState(false);
-  const [employee, setEmployees] = useState(employees);
+    const [state, setState] = React.useState({
+        employees: [],
+        filtered: [],
+        searchBy: ""
+    })
 
-  function handleSearch(e) {
-    e.preventDefault();
-    setSearch(e.target.value);
-  }
+    React.useEffect(() => {
+        const mapped = employees.map(e => ({
+            ...e,
+            firstName: e.name.first,
+            lastName: e.name.last
+        }))
 
-  function handleFilterName() {
-    if (!filtered) {
-      setEmployees(employee.sort((x, y) => (x.name > y.name) ? 1 : -1));
-      setFiltered(true);
-    } else {
-      setEmployees(employee.sort((x, y) => (x.name > y.name) ? -1 : 1));
-      setFiltered(false);
+        setState(state => ({
+            ...state,
+            employees: mapped,
+            filtered: mapped
+        }))
+    }, [])
+
+    const handleSearch = (e) => {
+        e.preventDefault();
+
+        setState({
+            ...state,
+            filtered: state.employees.filter(emp => emp[state.searchBy].toLowerCase().includes(e.target.value.toLowerCase()))
+        });
     }
-  }
 
-  function handleFilterDepartment() {
-    if (!filtered) {
-      setEmployees(employee.sort((x, y) => (x.department > y.department) ? 1 : -1));
-      setFiltered(true);
-    } else {
-      setEmployees(employee.sort((x, y) => (x.department > y.department) ? -1 : 1));
-      setFiltered(false);
-    }
-  }
+    const setSearchTerm = term => setState({ ...state, searchBy: term })
 
-  function handleFilterRole() {
-    if (!filtered) {
-      setEmployees(employee.sort((x, y) => (x.role > y.role) ? 1 : -1));
-      setFiltered(true);
-    } else {
-      setEmployees(employee.sort((x, y) => (x.role > y.role) ? -1 : 1));
-      setFiltered(false);
-    }
-  }
+    return (
+        <div>
+            <Navbar
+                handleSearch={handleSearch}
+                setSearchTerm={setSearchTerm}
+            />
+            <Wrapper>
 
-  return (
-    <div>
-      <Navbar
-        search={search}
-        onSearch={handleSearch}
-        handleFilterName={handleFilterName}
-        handleFilterDepartment={handleFilterDepartment}
-        handleFilterRole={handleFilterRole}
-      />
-      <Wrapper>
+                {
+                    state.filtered.map(e => <div>{JSON.stringify(e)}</div>)
+                }
+                {/* <EmployeeCard />
+
         {employees.map(e => {
           console.log(e);
           return (<EmployeeCard {...e} />)
-        })}
-      </Wrapper>
-    </div>
-  );
+        })} */}
+            </Wrapper>
+        </div>
+    );
 }
 
 export default App;
+
+
+//notes
+// 1. rather than immediately call setEmployees, try starting by making a new variable "filteredArray" and make an array of just the employees that match the query.
+// 2. console.log it to ensure that's working, then throw it in setEmployees
+// 3. check to make sure your Wrapper is mapping the right array. Right now it's mapping "employees"
+
+// be careful with the array.filter method; it's weird in that it returns an array of the deleted items... so make sure step 1 and 2 are done right before moving forward!
+
+// 1. array.filter (this method's probably the quickest way to get this done)
+// 2. array.forEach( thing => if(thing.property === search){ push to some "result" variable }
+// 3. array.map (probably not as good as filter)

@@ -18,19 +18,24 @@ function Navbar(props) {
                             placeholder="Enter Name, Dept, or Role"
                             aria-label="Search"
                             type="text"
+                            onChange={props.handleSearch}
                             required></input>
                         <button
                             type="button"
                             className="btn btn-dark"
-                            onClick={props.handleFilterName}>Search by Name</button>
+                            onClick={() => props.setSearchTerm("lastName")}>Search by Last Name</button>
                         <button
                             type="button"
                             className="btn btn-dark"
-                            onClick={props.handleFilterDepartment}>Search by Department</button>
+                            onClick={() => props.setSearchTerm("firstName")}>Search by First Name</button>
                         <button
                             type="button"
                             className="btn btn-dark"
-                            onClick={props.handleFilterRole}>Search by Role</button>
+                            onClick={() => props.setSearchTerm("department")}>Search by Department</button>
+                        <button
+                            type="button"
+                            className="btn btn-dark"
+                            onClick={() => props.setSearchTerm("role")}>Search by Role</button>
                     </form>
                 </li>
             </ul>
